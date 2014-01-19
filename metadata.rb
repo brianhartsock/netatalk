@@ -18,8 +18,12 @@ recipe "netatalk::build_deb", "Builds Netatalk from the source package with Open
 
 recipe "netatalk::build_aur", "Builds Netatalk package from Arch User Repository (AUR) w/ OpenSSL support enabled"
 
+recipe "netatalk::avahi_service", "Installs the Avahi service file to advertise AFPD on the network"
+
 supports "debian", ">= 6.0"
 supports "ubuntu", ">= 10.04"
+
+depends "avahi-daemon"
 
 attribute("netatalk/shares",
   :display_name => "Shares",

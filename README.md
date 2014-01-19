@@ -56,6 +56,12 @@ To modify the options used in `/etc/netatalk/afpd.conf`, set the
 `node['netatalk']['afpd_options']` with the entire string as the
 options line that should appear in the configuration file.
 
+Avahi Integration
+================
+
+The `netatalk::avahi_service` recipe will install the AFPD Avahi service to 
+advertise on the network.
+
 License and Author
 ==================
 
